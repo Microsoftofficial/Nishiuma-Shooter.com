@@ -124,7 +124,7 @@ window.onload = function () {
 				game.pushScene(endScene);				//endSceneシーンを読み込ませる
 
 				//ゲームオーバー後のテキスト表示
-				gameOverText.text = "GAMEOVER!!  記録：" + point + "西馬ポイント";				//テキストに文字表示 
+				gameOverText.text = "GAMEOVER 記録：" + point + "枚";				//テキストに文字表示 
 			}
 
 		};
@@ -167,8 +167,8 @@ window.onload = function () {
 		tweetBtn.ontouchend = function () {				//S_Tweetボタンをタッチした（タッチして離した）時にこの中の内容を実行する
 			//ツイートＡＰＩに送信
 			//結果ツイート時にURLを貼るため、このゲームのURLをここに記入してURLがツイート画面に反映されるようにエンコードする
-			const url = encodeURI("https://microsoftofficial.github.io/Nishiuma-Shooter.com/");
-			window.open("http://twitter.com/intent/tweet?text=頑張って" + point + "枚入手した&hashtags=ahoge&url=" + url); //ハッシュタグにahogeタグ付くようにした。
+			const url = encodeURI("https://hothukurou.com");
+			window.open("http://twitter.com/intent/tweet?text=頑張って" + point + "西馬ポイント入手した&hashtags=西馬シューター&url=" + url); //ハッシュタグにahogeタグ付くようにした。
 		};
 
 	};
