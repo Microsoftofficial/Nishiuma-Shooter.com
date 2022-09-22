@@ -167,7 +167,7 @@ window.onload = function () {
 		tweetBtn.ontouchend = function () {				//S_Tweetボタンをタッチした（タッチして離した）時にこの中の内容を実行する
 			//ツイートＡＰＩに送信
 			//結果ツイート時にURLを貼るため、このゲームのURLをここに記入してURLがツイート画面に反映されるようにエンコードする
-			const url = encodeURI("https://hothukurou.com");
+			const url = encodeURI("https://microsoftofficial.github.io/Nishiuma-Shooter.com/");
 			window.open("http://twitter.com/intent/tweet?text=頑張って" + point + "西馬ポイント入手した&hashtags=西馬シューター&url=" + url); //ハッシュタグにahogeタグ付くようにした。
 		};
 
