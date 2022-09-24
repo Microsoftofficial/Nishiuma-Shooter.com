@@ -25,7 +25,8 @@
         }
 
         body {
-            background-color: #222222;
+            background-image: url(space.png);
+            background-size: contain;
             color: #FFFFFF;
         }
 
@@ -47,6 +48,12 @@
         <h2>お借りした素材</h2>
         <a href="https://microsoftofficial.github.io/Nishiumadaze.co.jp/">文化祭から撮った西馬の顔面</a>
         <br>
+        <script type="text/javascript">
+            history.pushState(null, null, location.href);
+            $(window).on('popstate', function(){
+              history.go(1);
+            });
+           </script>
     </div>
 </body>
 
